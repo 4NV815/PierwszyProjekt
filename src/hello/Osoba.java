@@ -23,5 +23,10 @@ public class Osoba {
 	public void setNazwisko(String nazwisko) {
 		this.nazwisko = nazwisko;
 	}
+
+	@Override
+	public String toString() {
+		return "Osoba [imię=" + imię + ", nazwisko=" + nazwisko + "]";
+	}
 	
 }
