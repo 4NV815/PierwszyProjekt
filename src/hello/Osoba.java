@@ -1,14 +1,18 @@
 package hello;
 
+import java.time.LocalDate;
+
 public class Osoba {
 	private String imię, nazwisko;
+	private LocalDate dataUrodzenia;
 	
 	public Osoba() {	
 	}
 
-	public Osoba(String imię, String nazwisko) {
+	public Osoba(String imię, String nazwisko, LocalDate dataUrodzenia) {
 		this.imię = imię;
 		this.nazwisko = nazwisko;
+		this.dataUrodzenia = dataUrodzenia;
 	}
 
 	public String getImię() {
@@ -26,10 +30,18 @@ public class Osoba {
 	public void setNazwisko(String nazwisko) {
 		this.nazwisko = nazwisko;
 	}
+	
+	public LocalDate getDataUrodzenia() {
+		return dataUrodzenia;
+	}
+
+	public void setDataUrodzenia(LocalDate dataUrodzenia) {
+		this.dataUrodzenia = dataUrodzenia;
+	}
 
 	@Override
 	public String toString() {
-		return "Osoba [imię=" + imię + ", nazwisko=" + nazwisko + "]";
+		return "Osoba [imię=" + imię + ", nazwisko=" + nazwisko + ", dataUrodzenia=" + dataUrodzenia + "]";
 	}
 	
 }
