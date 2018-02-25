@@ -1,5 +1,27 @@
 package hello;
 
 public class Osoba {
-	String imię, nazwisko;
+	private String imię, nazwisko;
+
+	public Osoba(String imię, String nazwisko) {
+		this.imię = imię;
+		this.nazwisko = nazwisko;
+	}
+
+	public String getImię() {
+		return imię;
+	}
+
+	public void setImię(String imię) {
+		this.imię = imię;
+	}
+
+	public String getNazwisko() {
+		return nazwisko;
+	}
+
+	public void setNazwisko(String nazwisko) {
+		this.nazwisko = nazwisko;
+	}
+	
 }
