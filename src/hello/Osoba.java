@@ -2,6 +2,9 @@ package hello;
 
 public class Osoba {
 	private String imię, nazwisko;
+	
+	public Osoba() {	
+	}
 
 	public Osoba(String imię, String nazwisko) {
 		this.imię = imię;
